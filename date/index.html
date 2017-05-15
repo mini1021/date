@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <p>請輸入年月日來計算天數</p>
+    <input type="text" id="year" />年 <input type="text" id="month" />月
+    <input type="text" id="day" />日
+    <button type="submit" id="check" style="size:20px" onClick="c()">確定
+    </button><br>
+    
+    共計<label id ="text">0</label>天
+    </head>
+    <body>
+        <script>
+            
+            
+            
+            function c()
+            {
+            var a =document.getElementById("day").value;
+            var b =document.getElementById("month").value;
+            var c =document.getElementById("year").value;
+           
+            var d = parseInt(a);
+            var m = parseInt(b);
+            var y = parseInt(c);
+                if(y%4!=0)
+                {
+                     switch(m)
+                        {
+                        case 1:
+                        var x =((m-1)*30)+d;
+                        text.innerHTML=x;
+                        break;
+                        case 2:
+                        var x =((m-1)*30)+d-2+m;
+                        text.innerHTML=x;
+                        break;
+                        case 3:
+                        var x =((m-1)*30)+d-2+(m-2);
+                        text.innerHTML=x;
+                        break;
+                        case 4:
+                        var x =((m-1)*30)+d-2+(m-2);
+                        text.innerHTML=x;
+                        break;
+                        case 5:
+                        var x =((m-1)*30)+d-2+(m-3);
+                        text.innerHTML=x;
+                        break;
+                        case 6:
+                        var x =((m-1)*30)+d-2+(m-3);
+                        text.innerHTML=x;
+                        break;
+                        case 7:
+                        var x =((m-1)*30)+d-2+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 8:
+                        var x =((m-1)*30)+d-2+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 9:
+                        var x =((m-1)*30)+d-2+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 10:
+                        var x =((m-1)*30)+d-2+(m-5);
+                        text.innerHTML=x;
+                        break;
+                        case 11:
+                        var x =((m-1)*30)+d-2+(m-5);
+                        text.innerHTML=x;
+                        break;
+                        case 12:
+                        var x =((m-1)*30)+d-2+(m-6);
+                        text.innerHTML=x;
+                        break;
+                        }
+                    
+                }
+                else
+                {
+                    switch(m)
+                        {
+                        case 1:
+                        var x =((m-1)*30)+d;
+                        text.innerHTML=x;
+                        break;
+                        case 2:
+                            var x =((m-1)*30)+d-1+m;
+                        text.innerHTML=x;
+                        break;
+                        case 3:
+                        var x =((m-1)*30)+d-1+(m-2);
+                        text.innerHTML=x;
+                        break;
+                        case 4:
+                        var x =((m-1)*30)+d-1+(m-2);
+                        text.innerHTML=x;
+                        break;
+                        case 5:
+                        var x =((m-1)*30)+d-1+(m-3);
+                        text.innerHTML=x;
+                        break;
+                        case 6:
+                        var x =((m-1)*30)+d-1+(m-3);
+                        text.innerHTML=x;
+                        break;
+                        case 7:
+                        var x =((m-1)*30)+d-1+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 8:
+                        var x =((m-1)*30)+d-1+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 9:
+                        var x =((m-1)*30)+d-1+(m-4);
+                        text.innerHTML=x;
+                        break;
+                        case 10:
+                        var x =((m-1)*30)+d-1+(m-5);
+                        text.innerHTML=x;
+                        break;
+                        case 11:
+                        var x =((m-1)*30)+d-1+(m-5);
+                        text.innerHTML=x;
+                        break;
+                        case 12:
+                        var x =((m-1)*30)+d-1+(m-6);
+                        text.innerHTML=x;
+                        break;
+                        }
+                }
+                
+               
+            }
+            
+        </script>
+    </body>
+</html>
